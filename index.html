@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Busca de Usuarios</title>
+</head>
+<body class="bg-gray-300 min-h-screen flex items-center justify-center">
+    <div id="loading" class="hidden fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+        <div class="animate-spin rounded-full h-10 w-10 border-4 border-purple-500 border-t-transparent"></div>
+    </div>
+    <div class="bg-gray-200">
+        <div class="flex items-center w-full h-full">
+            <div id="botao" class="botao bg-gray-300">
+                <button class="text-white p-2 rounded-xl bg-purple-500 hover:scale-105 hover:text-gray-300 hover:bg-purple-600 transition delay-50" id="btn">Carregar Usuarios</button>
+            </div>
+            
+            <div id="usuarios" class="flex flex-col hidden bg-gray-300">
+             
+                
+            </div>
+          
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</html>
